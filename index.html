@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/7a0f7896d3.js" crossorigin="anonymous"></script>
     <title>Fondo de Bikini</title>
 </head>
@@ -62,9 +70,14 @@
     <h1 class="general-title fw-med position-relative">
         Cuidado sostenible para las especies marinas en Colombia
     </h1>
-    <a href="#sliderFish" class="txtStarts" id="btn-downArrows">
+    <a href="#sliderFish" class="txtStarts">
         <div class="cuadro activeArrow"></div>
         <div class="cuadro cuadro-2 activeArrow-2"></div>
+    </a>  
+    <!-- <span class="txtStart">
+        <a href="#sliderFish" class="fw-med">!Comencemos¡</a>
+    </span> -->
+    <video style="z-index: -1; position: absolute; top: 0; max-width: 100%; opacity: 0.9;" src="img/vid-portada-1.mp4" playsinline autoplay muted loop id="front-main-video"></video>
     </a>  
     <span class="txtStart fw-med ">
         !Comencemos la aventura¡
@@ -72,6 +85,141 @@
     <video style="z-index: -1; position: absolute; top: 0; max-width: 100%; opacity: 0.92;" src="img/vid-portada-1.mp4" playsinline autoplay muted loop id="front-main-video"></video>
     </div>
     <!-- <<<<<<<<<<<<< apartir de aquí le toca a ud, trabaje de esta linea para abajo >>>>>>>>>>>>>>>>>>>-->
+    <div id="sliderFish" >
+        <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+            ></button>
+        </div>
+        <div class="carousel-inner vh-100" id="principal">
+            <div class="carousel-item active vh-100">
+                <img
+                src="https://content.nationalgeographic.com.es/medio/2022/12/12/pez-1_624921b9_221212160925_1280x720.jpg"
+                class="d-block imagenpez"
+                alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Primer pez</h5>
+                <p>Descripcion del pez</p>
+                </div>
+            </div>
+            <div class="carousel-item active h-100">
+                <img src="img/peces coral.jpg" class="d-block imagenpez" alt="..."/>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Peces de arrecife</h5>
+                <p>Conjunto de peces de arrecife</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+    <!--<div id="sliderFish">
+        <div class="container-fluid contenedor h-100">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                        </div>
+                        <div class="carousel-inner vh-100" id="principal">
+                            <div class="carousel-item active vh-100">
+                                <img
+                                src="https://content.nationalgeographic.com.es/medio/2022/12/12/pez-1_624921b9_221212160925_1280x720.jpg"
+                                class="d-block imagenpez"
+                                alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Primer pez</h5>
+                                <p>Descripcion del pez</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item active h-100">
+                                <img src="img/peces coral.jpg" class="d-block imagenpez" alt="..."/>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Peces de arrecife</h5>
+                                <p>Conjunto de peces de arrecife</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 descripcion">
+                    <h2 class="amenzadas">
+                        Estas son algunas de las especies amenzadas
+                    </h2>
+                    <br />
+                    <div class="ejemplos">
+                        <div class="amenaza col-3">
+                            <h4>Tortuga carey</h4>
+                            <img class="image" src="img/tortuga carey.jpg" alt="" style="width: 233px"/>
+                            <p> Se encuentra en peligro de extincion debido a la pesca incidental, la contaminación y el saqueo de huevos en los sitios de anidación</p>
+                        </div>
+                        <div class="amenaza col-3">
+                            <h4>Manati</h4>
+                            <img class="image" src="img/manati.jpeg" alt="" style="width: 286px" height="175px"/>
+                            <p> Se encuentra en peligro de extincion debido a la pesca indiscriminada, la contaminación de sus habitas, continuamente chocan contra embarcaciones causando su muerte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
     <div id="sliderFish" >
         <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -143,6 +291,18 @@
                 voluptate architecto, illum commodi quia obcaecati eum amet et.
                 Molestias reprehenderit laboriosam, cupiditate tempore esse ratione
                 eum quo?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio,
+                blanditiis mollitia dolores delectus, optio nemo iure recusandae
+                labore accusamus id praesentium, nam maxime ea necessitatibus nulla
+                ducimus voluptate. Sequi libero odio obcaecati nobis! Aperiam quis
+                odit eligendi ratione, adipisci architecto quas ex ea ipsam delectus
+                quisquam est harum eveniet facere consequuntur laborum sed amet?
+                Est, explicabo ipsum! Nihil distinctio laborum hic! Pariatur, sequi.
+                Laboriosam expedita est praesentium. Atque, tempore. Porro dicta
+                quasi est suscipit iste sapiente fuga optio dolores similique quidem
+                voluptate architecto, illum commodi quia obcaecati eum amet et.
+                Molestias reprehenderit laboriosam, cupiditate tempore esse ratione
+                eum quo?
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -162,8 +322,37 @@
                     data-bs-dismiss="modal"
                     aria-label="Close"
                     ></button>
+                    <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    ></button>
                 </div>
                 <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                    perferendis cumque. Iusto impedit asperiores aliquid expedita natus
+                    sed? Eaque, pariatur alias maxime non eum possimus consequuntur,
+                    provident corporis ullam tenetur laboriosam! Culpa quaerat dolor
+                    accusamus quasi distinctio numquam ut iusto odio inventore iure
+                    incidunt quos, magni maxime hic veritatis error mollitia soluta
+                    quod! Earum quo nihil rerum, hic tenetur enim laudantium quibusdam
+                    neque similique aperiam non molestias ab deserunt odio sint dolor
+                    beatae nemo dolores. Autem impedit veniam natus quaerat eveniet sed
+                    ab consectetur consequuntur, quod facere temporibus dolorum
+                    expedita, adipisci sunt? Aliquid reprehenderit reiciendis nemo
+                    voluptate nam commodi laudantium quae. Quos nemo dolorem quasi
+                    tempora sed sit! Labore veniam fuga exercitationem molestiae saepe
+                    similique necessitatibus dignissimos deserunt eligendi odit culpa
+                    ipsam, voluptatum facere! Molestias vero amet sapiente sequi modi in
+                    quibusdam, tenetur animi officia. Repellat sapiente sed minima
+                    consequatur ratione a facilis. Provident enim totam reiciendis eius
+                    earum. Quas magnam ullam aperiam porro magni, culpa eius rerum
+                    tenetur dolorem dolores asperiores! Neque architecto ut impedit
+                    delectus velit deleniti labore doloremque repellat alias adipisci
+                    saepe molestias aut, culpa obcaecati nam, dignissimos cumque! Dolor
+                    blanditiis, praesentium ratione ipsam officia, dolore et laborum
+                    numquam tenetur sequi odit! Odit perferendis ut incidunt illum.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
                     perferendis cumque. Iusto impedit asperiores aliquid expedita natus
                     sed? Eaque, pariatur alias maxime non eum possimus consequuntur,
@@ -261,6 +450,64 @@
                     nemo, nesciunt commodi laboriosam harum officia perferendis sint
                     accusamus aut deleniti iste enim iure libero doloremque aliquam
                     suscipit temporibus. Cumque libero ad tempore ullam molestiae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    sapiente quod officiis excepturi reiciendis illo nam quae ullam
+                    quaerat eligendi eos animi possimus provident, id dolorem commodi.
+                    Eveniet doloremque nesciunt aspernatur, hic delectus illum. Placeat
+                    eligendi suscipit quos natus quibusdam, modi ea temporibus amet
+                    recusandae. Molestiae, dolorum vero hic laudantium nisi vel fugit
+                    eos! Perferendis reiciendis, doloremque dolores laudantium officiis
+                    earum odit, minima expedita sit odio repellat labore! Qui veritatis
+                    aliquid quis! Mollitia itaque id non, maiores voluptas quae
+                    doloremque dolore voluptates eveniet placeat obcaecati, laboriosam
+                    similique aliquam earum quasi debitis nulla delectus adipisci.
+                    Necessitatibus impedit quod, quidem iste minima velit alias modi
+                    officia ipsam porro ad delectus in unde expedita dolor laborum
+                    laboriosam deserunt ea? Inventore nulla eius eum quod cum deleniti
+                    dolorum tempore recusandae perferendis neque ex quibusdam, dolore ea
+                    natus molestias dicta. Animi nam quas iure, quidem nobis laboriosam
+                    beatae dolorem accusantium labore fugit reprehenderit! Nesciunt
+                    totam quidem delectus rerum distinctio itaque esse provident
+                    officiis, ad adipisci, non soluta. Similique, accusantium suscipit!
+                    Consectetur, alias, quas sunt eos, libero nihil totam distinctio ea
+                    fuga natus et tenetur esse. Rerum nesciunt qui ex earum excepturi
+                    sit cum eaque libero modi pariatur explicabo perspiciatis unde
+                    deserunt ad tempore in assumenda blanditiis, reprehenderit sed eos
+                    inventore porro, perferendis autem! Vero molestias esse sapiente
+                    praesentium velit saepe aliquid molestiae quam aliquam natus ratione
+                    adipisci incidunt error dolorem, provident suscipit aut
+                    necessitatibus beatae rerum consectetur doloribus. Suscipit illo
+                    sint pariatur quo, explicabo, eius ipsa perspiciatis odit, natus
+                    doloribus impedit iure! Sit dolores neque repellat inventore
+                    eligendi, quia delectus dolor minima consequuntur at cum quo
+                    voluptates alias. Officiis quas et fugit aut soluta asperiores
+                    nostrum eaque delectus expedita nisi hic repellendus, saepe tenetur
+                    esse reiciendis doloremque veniam iusto. Dolores rem ipsam omnis,
+                    quo ad nisi esse eos nihil autem fugiat cupiditate nobis veritatis
+                    adipisci saepe, asperiores iste temporibus atque, explicabo quaerat
+                    quas vel dignissimos deleniti. Debitis sed, iure, non repellendus
+                    earum atque ullam delectus quam magnam odit repudiandae, quibusdam
+                    ex nulla molestiae modi dolor rerum veniam perspiciatis voluptas
+                    voluptatem aliquid provident expedita. Tempore error dignissimos
+                    blanditiis aspernatur modi odit, recusandae est, aliquam doloribus
+                    voluptas voluptatibus quis nam quasi necessitatibus. Rerum quod,
+                    necessitatibus obcaecati minima quos odio voluptatum, facere
+                    provident ducimus voluptates voluptatem praesentium a. Ad iure
+                    dolores ducimus et, enim deleniti temporibus est ratione quasi
+                    reprehenderit perferendis delectus ut nemo eos voluptates soluta
+                    ullam iste excepturi rerum repudiandae magni ea. Voluptates maxime
+                    quisquam dolores recusandae porro rerum dolore odit vel perspiciatis
+                    aperiam nam, esse excepturi consequatur accusantium maiores nobis
+                    doloremque quia? Obcaecati recusandae ipsum eveniet quibusdam,
+                    tenetur provident quis libero tempora sapiente veritatis cumque
+                    corrupti autem aut voluptatum earum fugiat nisi ab repellendus ipsa
+                    qui est. Libero numquam placeat id nihil odit vel dignissimos
+                    tempore, impedit corrupti recusandae nobis esse maxime molestias,
+                    provident harum tenetur a quibusdam, veritatis exercitationem rem
+                    nam. Maxime reiciendis autem, nisi hic exercitationem in voluptatum
+                    nemo, nesciunt commodi laboriosam harum officia perferendis sint
+                    accusamus aut deleniti iste enim iure libero doloremque aliquam
+                    suscipit temporibus. Cumque libero ad tempore ullam molestiae.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar</button>
@@ -268,6 +515,7 @@
             </div>
         </div>
     </div>
+
     <!--Prueba de lectura txt js-->
     <label for="file-input">Examinar</label>
     <input type="file" id="file-input" />

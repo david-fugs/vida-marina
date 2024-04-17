@@ -115,6 +115,7 @@ h1 {
   animation: translateArrow-2 1.5s infinite alternate;
 }
 .txtStart {
+<<<<<<< HEAD
   color: var(--blanco);
   margin: auto;
   font-size: 1.8rem;
@@ -138,6 +139,21 @@ h1 {
 /* --- SE COMENTA PARA FUTURO USO EFECTO BOTON HUNDIDO --- */
 
 /* .txtStart > a {
+=======
+  position: absolute;
+  top: 90%;
+  left: calc(50% - 90px);
+  color: var(--azul-1);
+  font-size: 1.35rem;
+  filter: drop-shadow(6px 7px 1px #000);
+  background-color: rgba(255, 255, 255, 0.78);
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.txtStart > a {
+>>>>>>> bde9d42f3e321f03d8c0d94ed045177529c0cca9
   color: var(--azul-1);
 }
 .txtStart > a:hover {
@@ -147,6 +163,7 @@ h1 {
   box-shadow: 4px 6px 6px var(--black) inset;
   filter: none;
   top: 90.5%;
+<<<<<<< HEAD
 } */
 #sliderFish {
   width: 100vw;
@@ -177,6 +194,56 @@ h1 {
   width: 100%;
   height: auto;
 }
+=======
+}
+#sliderFish {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--azul-1);
+}
+.imag {
+  width: 280px;
+  padding: 20px;
+}
+.imag {
+  width: 20px;
+  padding: 5px;
+}
+.ejemplos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contenedor {
+  background-color: #c6e4fc;
+}
+@keyframes translateArrow {
+  0% {
+    transform: translateY(30px) rotate(225deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(225deg);
+  }
+}
+@keyframes translateArrow-2 {
+  0% {
+    transform: translateY(calc(50px + 30px)) rotate(225deg);
+  }
+
+  100% {
+    transform: translateY(50px) rotate(225deg);
+  }
+}
+.amenaza {
+  display: table-caption;
+  flex-wrap: wrap;
+}
+.imagenpez {
+  width: 100%;
+  height: auto;
+}
+>>>>>>> bde9d42f3e321f03d8c0d94ed045177529c0cca9
 .botones {
     all: unset; /* Esto elimina todos los estilos heredados y de usuario */
     background: none; /* Remueve cualquier fondo */
@@ -188,6 +255,7 @@ h1 {
     width: 12rem;
     height: 12rem;
 }
+<<<<<<< HEAD
 
 
 .header-modal{
@@ -217,3 +285,5 @@ h1 {
     transform: translateY(50px) rotate(225deg);
   }
 }
+=======
+>>>>>>> bde9d42f3e321f03d8c0d94ed045177529c0cca9
