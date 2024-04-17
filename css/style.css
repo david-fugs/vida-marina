@@ -115,31 +115,6 @@ h1 {
   animation: translateArrow-2 1.5s infinite alternate;
 }
 .txtStart {
-<<<<<<< HEAD
-  color: var(--blanco);
-  margin: auto;
-  font-size: 1.8rem;
-  filter: drop-shadow(6px 7px 1px #000);
-  transition: all 0.2s;
-  cursor: pointer;
-  position: absolute;
-  top: 93%;
-  left: calc(50% - 185px);
-}
-#sliderFish {
-  display: none;
-}
-.carousel-item {
-  transform: translateY(-500px);
-  transition: transform 1s;
-}
-.carousel-item.activeParallax {
-  transform: translateY(0);
-}
-/* --- SE COMENTA PARA FUTURO USO EFECTO BOTON HUNDIDO --- */
-
-/* .txtStart > a {
-=======
   position: absolute;
   top: 90%;
   left: calc(50% - 90px);
@@ -153,7 +128,6 @@ h1 {
   cursor: pointer;
 }
 .txtStart > a {
->>>>>>> bde9d42f3e321f03d8c0d94ed045177529c0cca9
   color: var(--azul-1);
 }
 .txtStart > a:hover {
@@ -195,7 +169,7 @@ h1 {
   height: auto;
 }
 =======
-}
+
 #sliderFish {
   width: 100vw;
   max-width: 100%;
@@ -255,7 +229,6 @@ h1 {
     width: 12rem;
     height: 12rem;
 }
-<<<<<<< HEAD
 
 
 .header-modal{
@@ -285,5 +258,3 @@ h1 {
     transform: translateY(50px) rotate(225deg);
   }
 }
-=======
->>>>>>> bde9d42f3e321f03d8c0d94ed045177529c0cca9
