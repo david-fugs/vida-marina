@@ -188,7 +188,9 @@ h1 {
     width: 12rem;
     height: 12rem;
 }
-
+.modal-content {
+  max-height: 70%;
+}
 /* PONER ESTILOS ENCIMA DE ESTAS KEYFRAMES */
 
 @keyframes translateArrow {
