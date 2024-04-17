@@ -135,6 +135,20 @@ h1 {
 .carousel-item.activeParallax {
   transform: translateY(0);
 }
+
+.header-modales{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.imagen-modal{
+    width: 350px;
+    height: 150px;
+}
+.texto-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 /* --- SE COMENTA PARA FUTURO USO EFECTO BOTON HUNDIDO --- */
 
 /* .txtStart > a {
