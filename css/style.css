@@ -1,176 +1,219 @@
 @import url(media_queries.css);
 :root {
-    --azul-1: #0077d4;
-    --azul-2: #20236D;
-    --blanco: #FFFFFF;
-    --black: #000000;
+  --azul-1: #0077d4;
+  --azul-2: #20236d;
+  --blanco: #ffffff;
+  --black: #000000;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 header {
-    background-color: transparent;
-    position: relative;
+  background-color: transparent;
+  position: relative;
 }
 header .separator {
-    display: block;
-    height: 2px;
-    width: 90%;
-    bottom: 0;
-    margin: auto;
-    background-color: var(--blanco);
+  display: block;
+  height: 2px;
+  width: 90%;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--blanco);
 }
 .general-title {
-    color: var(--blanco);
+  color: var(--blanco);
 }
 .fw-med {
-    font-weight: 700;
+  font-weight: 700;
 }
 .title-nav {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 ul.markers li > a {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 h1 {
-    color: var(--azul-1);
-    text-align: center;
-    font-size: 5rem;
-    padding: 2.8% 25%;
-    filter: drop-shadow(11px 13px 3px #000);
+  color: var(--azul-1);
+  text-align: center;
+  font-size: 5rem;
+  padding: 2.8% 25%;
+  filter: drop-shadow(11px 13px 3px #000);
 }
 .main-img {
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    position: relative;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
 }
 #front-main-video {
-    position: absolute;
-    z-index: -1;  
-    top: 0; 
-    max-width: 100%; 
-    opacity: .9;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  max-width: 100%;
+  opacity: 0.9;
 }
 .main-img::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.35);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 0;
 }
 .add > span i {
-    font-size: 20px;
-    padding: 60px;
-    background-color: var(--azul-1);
-    color: black;
-    border-radius: 50%;
-    position: absolute;
-    margin: auto;
-    top: 70%;
-    left: 50%;
+  font-size: 20px;
+  padding: 60px;
+  background-color: var(--azul-1);
+  color: black;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 70%;
+  left: 50%;
+}
+.txtStarts {
+  position: relative;
+  cursor: pointer;
+  z-index: 9;
+  display: block;
+  margin: auto;
 }
 .cuadro {
-    width: 88px;
-    height: 88px;
-    border-top: 8px solid var(--blanco);
-    border-left: 8px solid var(--blanco);
-    position: absolute;
-    top: calc(50% + 88px);
-    left: calc(50% - 44px);
-    transform: rotate(225deg);
-    filter: drop-shadow(4px 6px 2px rgba(255,255,255, 0.4));
+  width: 88px;
+  height: 88px;
+  border-top: 8px solid var(--blanco);
+  border-left: 8px solid var(--blanco);
+  position: absolute;
+  top: calc(50% + 88px);
+  left: calc(50% - 44px);
+  transform: rotate(225deg);
+  filter: drop-shadow(4px 6px 2px rgba(255, 255, 255, 0.4));
 }
 .cuadro.cuadro-2 {
-    transform: translateY(50px) rotate(225deg);
+  transform: translateY(50px) rotate(225deg);
 }
 .activeArrow {
-    animation: translateArrow 1.5s infinite alternate;
+  animation: translateArrow 1.5s infinite alternate;
 }
 .activeArrow-2 {
-    animation: translateArrow-2 1.5s infinite alternate;
+  animation: translateArrow-2 1.5s infinite alternate;
 }
 .txtStart {
-    position: absolute;
-    top: 90%;
-    left: calc(50% - 90px);
-    color: var(--azul-1);
-    font-size: 1.35rem;
-    filter: drop-shadow(6px 7px 1px #000);
-    background-color: rgba(255, 255, 255, .78);
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: all .2s;
-    cursor: pointer;
+  color: var(--blanco);
+  margin: auto;
+  font-size: 1.8rem;
+  filter: drop-shadow(6px 7px 1px #000);
+  transition: all 0.2s;
+  cursor: pointer;
+  position: absolute;
+  top: 93%;
+  left: calc(50% - 185px);
 }
-.txtStart > a {
-    color: var(--azul-1);
+#sliderFish {
+  display: none;
+}
+.carousel-item {
+  transform: translateY(-500px);
+  transition: transform 1s;
+}
+.carousel-item.activeParallax {
+  transform: translateY(0);
+}
+/* --- SE COMENTA PARA FUTURO USO EFECTO BOTON HUNDIDO --- */
+
+/* .txtStart > a {
+  color: var(--azul-1);
 }
 .txtStart > a:hover {
-    color: var(--azul-1);
+  color: var(--azul-1);
 }
 .txtStart:hover {
-    box-shadow: 4px 6px 6px var(--black) inset;
-    filter: none;
-    top: 90.5%;
+  box-shadow: 4px 6px 6px var(--black) inset;
+  filter: none;
+  top: 90.5%;
+} */
+#sliderFish {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--azul-1);
 }
-.imag{
-    
-    width: 280px;
-    padding: 20px;
+.imag {
+  width: 280px;
+  padding: 20px;
 }
-.imag{
-    
-    width: 20px;
-    padding: 5px;
+.imag {
+  width: 20px;
+  padding: 5px;
 }
-
-.ejemplos{
-    display: flex;
-    justify-content: space-evenly;
+.ejemplos {
+  display: flex;
+  justify-content: space-evenly;
 }
-.contenedor{
-    background-color: #c6e4fc;
+.contenedor {
+  background-color: #c6e4fc;
 }
-@keyframes translateArrow {
-    0% {transform: translateY(30px) rotate(225deg);}
-
-    100% {transform: translateY(0) rotate(225deg);}
+.amenaza {
+  display: table-caption;
+  flex-wrap: wrap;
 }
-@keyframes translateArrow-2 {
-    0% {transform: translateY(calc(50px + 30px)) rotate(225deg);}
-
-    100% {transform: translateY(50px) rotate(225deg);}
+.imagenpez {
+  width: 100%;
+  height: auto;
 }
-.amenaza{
-    display: table-caption;
-    flex-wrap: wrap;
-}
-.imagenpez{
-    width: 1000px;
-    height: 600px;
-}
-.botones{
-    all: unset;   /* Esto elimina todos los estilos heredados y de usuario */
+.botones {
+    all: unset; /* Esto elimina todos los estilos heredados y de usuario */
     background: none; /* Remueve cualquier fondo */
     color: inherit; /* El color del texto hereda del elemento padre */
     border: none; /* Elimina los bordes */
     color: white;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 12rem;
+    height: 12rem;
+}
+
+
+.header-modal{
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+/* PONER ESTILOS ENCIMA DE ESTAS KEYFRAMES */
+
+@keyframes translateArrow {
+  0% {
+    transform: translateY(30px) rotate(225deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(225deg);
+  }
+}
+@keyframes translateArrow-2 {
+  0% {
+    transform: translateY(calc(50px + 30px)) rotate(225deg);
+  }
+
+  100% {
+    transform: translateY(50px) rotate(225deg);
+  }
 }
