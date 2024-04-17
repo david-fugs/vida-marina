@@ -18,6 +18,8 @@ function mostrarContenido(contenido) {
     let body = "";
     for(let i=0; i<contenido.length; i++){
         body +=  `
+     
+
         <div class="carousel-item h-100">
             <img src="${contenido[i].ruta_img}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">

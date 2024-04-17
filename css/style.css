@@ -125,16 +125,8 @@ h1 {
   top: 93%;
   left: calc(50% - 185px);
 }
-#sliderFish {
-  display: none;
-}
-.carousel-item {
-  transform: translateY(-500px);
-  transition: transform 1s;
-}
-.carousel-item.activeParallax {
-  transform: translateY(0);
-}
+
+
 
 .header-modales{
     display: flex;
@@ -191,6 +183,10 @@ h1 {
   width: 100%;
   height: auto;
 }
+.image{
+  width: 800px ;
+  height:800px;
+}
 .botones {
     all: unset; /* Esto elimina todos los estilos heredados y de usuario */
     background: none; /* Remueve cualquier fondo */
@@ -198,10 +194,10 @@ h1 {
     border: none; /* Elimina los bordes */
     color: white;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{
+ .carousel-control-next-icon, .carousel-control-prev-icon{
     width: 12rem;
     height: 12rem;
-}
+} 
 .modal-content {
   max-height: 70%;
 }
