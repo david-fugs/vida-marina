@@ -126,20 +126,18 @@ h1 {
   left: calc(50% - 185px);
 }
 
-
-
-.header-modales{
-    display: flex;
-    flex-direction: column-reverse;
+.header-modales {
+  display: flex;
+  flex-direction: column-reverse;
 }
-.imagen-modal{
-    width: 350px;
-    height: 150px;
+.imagen-modal {
+  width: 350px;
+  height: 150px;
 }
-.texto-imagenes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.texto-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 /* --- SE COMENTA PARA FUTURO USO EFECTO BOTON HUNDIDO --- */
 
@@ -183,21 +181,18 @@ h1 {
   width: 100%;
   height: auto;
 }
-.image{
-  width: 800px ;
-  height:800px;
-}
 .botones {
-    all: unset; /* Esto elimina todos los estilos heredados y de usuario */
-    background: none; /* Remueve cualquier fondo */
-    color: inherit; /* El color del texto hereda del elemento padre */
-    border: none; /* Elimina los bordes */
-    color: white;
+  all: unset; /* Esto elimina todos los estilos heredados y de usuario */
+  background: none; /* Remueve cualquier fondo */
+  color: inherit; /* El color del texto hereda del elemento padre */
+  border: none; /* Elimina los bordes */
+  color: white;
 }
- .carousel-control-next-icon, .carousel-control-prev-icon{
-    width: 12rem;
-    height: 12rem;
-} 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 12rem;
+  height: 12rem;
+}
 .modal-content {
   max-height: 70%;
 }
