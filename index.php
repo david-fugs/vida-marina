@@ -1,3 +1,11 @@
+<?php 
+require 'Conexion.php';
+$sql = 'SELECT * FROM posts';
+$fishPosts = mysqli_query($conn, $sql);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -98,11 +106,6 @@
     
    <div id="sliderFish">
     <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/main-head.jpg" class="d-block w-100 vh-100" alt="...">
@@ -111,6 +114,7 @@
             <p class="font">Some representative placeholder content for the first slide.</p>
           </div>
         </div>
+
         <div class="carousel-item">
           <img src="img/dory.jpg" class="d-block w-100 vh-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
@@ -125,6 +129,24 @@
             <p class="font">Some representative placeholder content for the third slide.</p>
           </div>
         </div>
+        <?php 
+        foreach ($fishPosts as $fishPost){
+          $name = $fishPost['name'];
+          $description = $fishPost['description'];
+          $link = $fishPost['link'];
+          
+
+            echo '<div class="carousel-item">';
+              echo '<img src="' . $link . '" class="d-block w-100 vh-100" alt="...">';
+              echo '<div class="carousel-caption d-none d-md-block">';
+              echo '<h5>' . $name . '</h5>';
+              echo '<p class="font">' . $description . '</p>';
+              echo '</div>';
+            echo '</div>';
+        }
+ ?>
+
+
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -302,6 +324,51 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+<!-- trigger del modal formulario-->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNewPost">
+  Ayudanos  a mejorar
+</button>
+
+<!-- Modal Formulario -->
+<div class="modal fade" id="modalNewPost" tabindex="-1" aria-labelledby="modalNewPostLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalNewPostLabel">Ingresa los datos</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="process-form.php" method="POST">
+          <div>
+          <label for="nombreMarino">Ingresa nombre del animal:</label>
+            <input type="text" name="name" id="nombreMarino" required>
+            <label for="descripcion">Descripción y cómo ayudar:</label>
+            <textarea name="description" id="descripcion" required></textarea>
+            <label for="imagen">Link de la imagen:</label>
+            <input type="text" name="link" id="imagen" required>
+          </div>
+      </div>
+      <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">Guardar </button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
     <!--Prueba de lectura txt js-->
     <label for="file-input">Examinar</label>
     <input type="file" id="file-input" />
